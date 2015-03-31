@@ -18,6 +18,6 @@ class TestEnUsLocale < Test::Unit::TestCase
     assert Faker::Address.street_name.is_a? String
     assert Faker::Address.city.is_a? String
     assert Faker::Address.region.is_a? String
+    assert Faker::Internet.useful_data.is_a? String
   end
-
 end

@@ -1,6 +1,8 @@
 # encoding: utf-8
 module Faker
   class Internet < Base
+    flexible :internet
+
     class << self
       def email(name = nil)
         [ user_name(name), domain_name ].join('@')
